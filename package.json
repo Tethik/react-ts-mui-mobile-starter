@@ -1,5 +1,6 @@
 {
   "name": "mobile-starter",
+  "homepage": "https://tethik.github.io/react-ts-mui-mobile-starter/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
