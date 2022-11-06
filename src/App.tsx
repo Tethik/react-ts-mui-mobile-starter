@@ -1,10 +1,9 @@
 import { Box, Paper } from "@mui/material";
-import React, { MouseEventHandler, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar } from "./Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { Leaderboard } from "./Leaderboard";
+import { Navbar } from "./Navbar";
 import { SampleListPage } from "./SampleListPage";
 
 function App() {
