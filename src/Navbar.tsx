@@ -1,8 +1,21 @@
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import HomeIcon from "@mui/icons-material/Home";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
-import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
+
+const buttonSx = {
+  color: "#ffffff",
+  ":active": {
+    color: "#fff",
+  },
+  ":hover": {
+    color: "rgba(255, 255, 255, 0.16)",
+  },
+  "&.Mui-selected": {
+    color: "rgba(255, 255, 255, 0.40)",
+  },
+};
 
 export function Navbar() {
   const location = useLocation();
@@ -15,10 +28,14 @@ export function Navbar() {
       onChange={(event, newValue) => {
         navigate(newValue);
       }}
+      sx={{
+        bgcolor: "#121212",
+      }}
     >
-      <BottomNavigationAction label="Home" icon={<AssignmentIcon />} value="/" />
-      <BottomNavigationAction label="Tasks" icon={<LocalGroceryStoreIcon />} value="/tasks" />
-      <BottomNavigationAction label="Leaderboard" icon={<LeaderboardIcon />} value="/leaderboard" />
+      {/* Find icons here: https://mui.com/material-ui/material-icons/ */}
+      <BottomNavigationAction label="Home" icon={<HomeIcon />} value="/" sx={buttonSx} />
+      <BottomNavigationAction label="Tasks" icon={<AssignmentIcon />} value="/tasks" sx={buttonSx} />
+      <BottomNavigationAction label="Leaderboard" icon={<LeaderboardIcon />} value="/leaderboard" sx={buttonSx} />
     </BottomNavigation>
   );
 }
