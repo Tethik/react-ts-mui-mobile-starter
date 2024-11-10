@@ -1,6 +1,6 @@
 # README
 
-WIP Skeleton to set up quick and dirty progessive web apps (PWA).
+Skeleton to set up quick and dirty progessive web apps (PWA).
 
 Uses Typescript, React and MUI.
 
@@ -8,9 +8,9 @@ Uses Typescript, React and MUI.
 
 Stuff you should probably change after cloning:
 
-1. `public/manifest.json` describes various things about your "app"
-2. `package.json` defines your public_url, used for routing stuff and when building (also used for github pages, if you host there)
-3. `public/index.html` title, favicon, descriptions etc.
+1. `package.json` defines your public_url, used for routing stuff and when building (also used for github pages, if you host there)
+2. `public/index.html` title, favicon, descriptions etc. See https://vite-pwa-org.netlify.app/guide/pwa-minimal-requirements.html#entry-point 
+3. `vite.config.ts` for setting your Web App Manifest file.
 
 ### Customizing
 
