@@ -14,7 +14,8 @@ import { ContactPage } from './routes/contact';
 import { EditContactPage } from './routes/editcontact';
 import { destroyContactAction } from './routes/destroy';
 
-console.log(import.meta.env);
+// See ENV vars at build time:
+// console.log(import.meta.env);
 
 const router = createBrowserRouter([
   {
