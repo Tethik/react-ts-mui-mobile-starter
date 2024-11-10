@@ -14,6 +14,8 @@ import { ContactPage } from './routes/contact';
 import { EditContactPage } from './routes/editcontact';
 import { destroyContactAction } from './routes/destroy';
 
+console.log(import.meta.env);
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,7 +60,9 @@ const router = createBrowserRouter([
       }
     ],
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL,
+});
 
 
 const theme = createTheme({
