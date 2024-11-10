@@ -4,7 +4,7 @@ Skeleton to set up quick and dirty progessive web apps (PWA).
 
 Uses Typescript, React and MUI.
 
-## Usage
+## Setup
 
 Stuff you should probably change after cloning:
 
@@ -16,16 +16,4 @@ Stuff you should probably change after cloning:
 
 * Make logo maskable to ensure you get nice icons when installed: https://web.dev/articles/maskable-icon
 * Change `background_color` in manifest.json to match with your icon on the startup splash screen.
-
-
-## TODO
-
-templateify
-https://create-react-app.dev/docs/custom-templates/
-
-in the meanwhile `git checkout-index` should work:
-
-```
-git checkout-index -a -f --prefix=~/code/js/my-recipes/app/
-```
 
