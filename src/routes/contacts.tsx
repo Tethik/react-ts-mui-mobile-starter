@@ -1,11 +1,11 @@
+import WorkIcon from "@mui/icons-material/Work";
+import { Button, Paper, Typography } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
-import WorkIcon from "@mui/icons-material/Work";
+import ListItemText from "@mui/material/ListItemText";
 import { Container } from "@mui/system";
-import { Button, ListItemButton, Paper, Typography } from "@mui/material";
 import { Form, Link, redirect, useLoaderData } from "react-router-dom";
 import { Contact, createContact, listContacts } from "../data/contacts";
 

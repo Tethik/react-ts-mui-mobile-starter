@@ -1,4 +1,4 @@
-import { redirect } from "react-router-dom";
+import { Params, redirect } from "react-router-dom";
 import { deleteContact } from "../data/contacts";
 
 export async function destroyContactAction({ params } : { params: Params<string> }) {
