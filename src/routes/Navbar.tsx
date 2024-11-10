@@ -1,3 +1,4 @@
+import PersonIcon from "@mui/icons-material/Person";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import HomeIcon from "@mui/icons-material/Home";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
@@ -19,13 +20,13 @@ const buttonSx = {
 
 export function Navbar() {
   const location = useLocation();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <BottomNavigation
       showLabels
       value={location.pathname}
-      onChange={(event, newValue) => {
+      onChange={(_, newValue) => {
         navigate(newValue);
       }}
       sx={{
@@ -34,6 +35,7 @@ export function Navbar() {
     >
       {/* Find icons here: https://mui.com/material-ui/material-icons/ */}
       <BottomNavigationAction label="Home" icon={<HomeIcon />} value="/" sx={buttonSx} />
+      <BottomNavigationAction label="Contacts" icon={<PersonIcon />} value="/contacts" sx={buttonSx} />
       <BottomNavigationAction label="Tasks" icon={<AssignmentIcon />} value="/tasks" sx={buttonSx} />
       <BottomNavigationAction label="Leaderboard" icon={<LeaderboardIcon />} value="/leaderboard" sx={buttonSx} />
     </BottomNavigation>

@@ -1,15 +1,21 @@
-import React from "react";
+
 import { Paper, Typography } from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
 import { Container } from "@mui/system";
+import { useLoaderData } from "react-router-dom";
+
+async function loader() {
+  const players = ["bob", "alice", "eve", "mallory", "steve"];
+  return { players };
+}
 
 export function Leaderboard() {
   const cool = ["🥇", "🥈", "🥉"];
 
-  const players = ["bob", "alice", "eve", "mallory", "steve"];
+  const { players } = useLoaderData() as { players: string[] };
 
   return (
     <Container>
@@ -27,3 +33,5 @@ export function Leaderboard() {
     </Container>
   );
 }
+
+Leaderboard.loader = loader;
