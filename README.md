@@ -12,6 +12,14 @@ Stuff you should probably change after cloning:
 2. `public/index.html` title, favicon, descriptions etc. See https://vite-pwa-org.netlify.app/guide/pwa-minimal-requirements.html#entry-point 
 3. `vite.config.ts` for setting your Web App Manifest file.
 
+## Running
+
+`npm run dev` - start the dev server
+
+<!-- `npm test` -->
+
+`npm run build` - build the javascript bundle
+
 ### Customizing
 
 * Make logo maskable to ensure you get nice icons when installed: https://web.dev/articles/maskable-icon
